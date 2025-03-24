@@ -3,8 +3,8 @@ $TTL 60
 
 
 
-@                   IN  NS      ns.craig.cesi.ztn.ovh.
-@                   IN  SOA     ns.craig.cesi.ztn.ovh. postmaster.ztn.ovh.  (
+@                   IN  NS      ns.cesi.ztn.ovh.
+@                   IN  SOA     ns.cesi.ztn.ovh. postmaster.ztn.ovh.  (
                                         ;; any numerical values are OK for serial number but
                                         ;; recommendation is [YYYYMMDDnn] (update date + number)
                                         2024122701  ;Serial
@@ -13,8 +13,5 @@ $TTL 60
                                         604800      ;Expire
                                         60       ;Minimum TTL
                                 )
-                    IN  A       1.2.3.4
+                    IN  A       192.168.16.131
 ns                  IN  A       192.168.16.131
-srv1                IN A    10.10.10.10
-vpn                 IN CNAME srv1
-vpn-backup          IN CNAME srv1.charlie.cesi.ztn.ovh.
