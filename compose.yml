@@ -1,0 +1,14 @@
+services:
+  bind:
+    image: ubuntu/bind9
+    container_name: bind
+    environment:
+      - TZ=Europe/Paris
+      - BIND9_USER=bind
+    ports:
+      - 192.168.16.131:53:53
+      - 192.168.16.131:53:53/udp
+    volumes:
+      - ./config/named.conf:/etc/bind/named.conf
+      - ./data/cache:/var/cache/bind
+      - ./data/zones:/var/lib/bind
