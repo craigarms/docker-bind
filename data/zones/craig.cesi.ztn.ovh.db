@@ -17,3 +17,4 @@ $TTL 60
 ns                  IN  A       192.168.16.131
 vpn                 IN  A       192.168.16.131
 api-vpn             IN  CNAME   vpn.cesi.ztn.ovh.
+login               IN  CNAME   vpn.cesi.ztn.ovh.
